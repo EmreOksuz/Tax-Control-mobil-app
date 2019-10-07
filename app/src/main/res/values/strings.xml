@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">E-Belediye Hizmeti</string>
+    <string name="giris">Giriş</string>
+    <string name="password">Password</string>
+    <string name="tekrar_password">Tekrar Password</string>
+    <string name="kurtar">Kurtar</string>
+    <string name="security_code">Security Code</string>
+    <string name="pencere_1">Pencere 1</string>
+    <string name="borc_nsorgu">Borc Sorgu</string>
+    <string name="ho_geld_n_z">HOŞGELDİNİZ</string>
+    <string name="title_activity_tab_generator">TabGeneratorActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

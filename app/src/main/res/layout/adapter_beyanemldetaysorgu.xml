@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="352dp"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/BeyanId_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:text="TextView"
+        android:textColor="@color/colorDialog"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:text="Beyan ID:"
+        android:textColor="@color/colorDialog" />
+
+    <TextView
+        android:id="@+id/Mahalle_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorDialog"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:text="Mahalle:"
+        android:textColor="@color/colorDialog" />
+
+    <TextView
+        android:id="@+id/MevkiAd_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorDialog"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:text="Mevki Ad:"
+        android:textColor="@color/colorDialog" />
+
+    <TextView
+        android:id="@+id/Pafta_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:text="TextView"
+        android:textColor="@color/colorDialog"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:text="Pafta:"
+        android:textColor="@color/colorDialog" />
+
+    <TextView
+        android:id="@+id/Ada_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:text="TextView"
+        android:textColor="@color/colorDialog"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:text="Ada:"
+        android:textColor="@color/colorDialog" />
+
+    <TextView
+        android:id="@+id/Parsel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:text="TextView"
+        android:textColor="@color/colorDialog"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:text="Parsel:"
+        android:textColor="@color/colorDialog" />
+
+    <TextView
+        android:id="@+id/BlokKatBolum_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:text="TextView"
+        android:textColor="@color/colorDialog"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:text="Blok/Kat/Bölüm:"
+        android:textColor="@color/colorDialog" />
+
+    <TextView
+        android:id="@+id/Cilt_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:text="TextView"
+        android:textColor="@color/colorDialog"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:text="Cilt:"
+        android:textColor="@color/colorDialog" />
+
+    <TextView
+        android:id="@+id/Sahife_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:text="TextView"
+        android:textColor="@color/colorDialog"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:text="Sahife:"
+        android:textColor="@color/colorDialog" />
+
+    <TextView
+        android:id="@+id/KayitTarihi_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:text="TextView"
+        android:textColor="@color/colorDialog"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:text="Kayıt Tarihi:"
+        android:textColor="@color/colorDialog" />
+
+    <TextView
+        android:id="@+id/BeyanTipi_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:text="TextView"
+        android:textColor="@color/colorDialog"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:text="Beyan Tipi:"
+        android:textColor="@color/colorDialog" />
+
+    <TextView
+        android:id="@+id/YuzOlcum_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:text="TextView"
+        android:textColor="@color/colorDialog"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:text="Yüz Ölçümü:"
+        android:textColor="@color/colorDialog" />
+
+    <TextView
+        android:id="@+id/HissePay_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:text="TextView"
+        android:textColor="@color/colorDialog"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:text="Hisse Pay:"
+        android:textColor="@color/colorDialog" />
+
+    <TextView
+        android:id="@+id/HissePayda_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:text="TextView"
+        android:textColor="@color/colorDialog"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:text="Hisse Payda:"
+        android:textColor="@color/colorDialog" />
+
+    <TextView
+        android:id="@+id/IktisapTarihi_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:text="TextView"
+        android:textColor="@color/colorDialog"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:text="İktisap Tarihi:"
+        android:textColor="@color/colorDialog" />
+
+
+</LinearLayout>

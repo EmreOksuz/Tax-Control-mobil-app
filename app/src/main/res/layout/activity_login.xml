@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/userTC"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="TC Kimlik"
+        android:inputType="numberDecimal"
+        android:maxLength="11"
+        android:text="62242312440"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:text="Aa12345"
+        android:textAlignment="center" />
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/login_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tahsilatSorgu_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:onClick="CallWebServiceTahsilat"
+        android:text="@string/giris"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        fbutton:buttonColor="@color/colorBlueAcik"
+        fbutton:cornerRadius="5dp"
+        fbutton:shadowColor="@color/colorPrimaryDark"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="5dp"
+        tools:ignore="HardcodedText" />
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/login_RegisterButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tahsilatSorgu_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="-50dp"
+        android:onClick="CallWebServiceTahsilat"
+        android:text="Kayıt ol"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        fbutton:buttonColor="@color/colorBlueAcik"
+        fbutton:cornerRadius="5dp"
+        fbutton:shadowColor="@color/colorPrimaryDark"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="5dp"
+        tools:ignore="HardcodedText" />
+
+
+    <CheckBox
+        android:text="Beni Hatırla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="5dp" />
+</LinearLayout>

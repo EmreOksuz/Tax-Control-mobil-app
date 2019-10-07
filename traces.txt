@@ -1,0 +1,1594 @@
+
+
+----- pid 17970 at 2017-07-18 16:39:28 -----
+Cmd line: tax.megakent.org.vergicontrol
+
+JNI: CheckJNI is off; workarounds are off; pins=0; globals=277
+
+DALVIK THREADS:
+(mutexes: tll=0 tsl=0 tscl=0 ghl=0)
+
+"main" prio=5 tid=1 SUSPENDED
+  | group="main" sCount=1 dsCount=0 obj=0xa4d38bd8 self=0xb963deb0
+  | sysTid=17970 nice=0 sched=0/0 cgrp=apps handle=-1216696256
+  | state=S schedstat=( 13390186720 76324053 1789 ) utm=1326 stm=12 core=0
+  at org.apache.harmony.xml.dom.NodeListImpl.item(NodeListImpl.java:~55)
+  at tax.megakent.org.vergicontrol.Main.XmlReader.XmlReaderBorc.processXML(XmlReaderDOM.java:44)
+  at tax.megakent.org.vergicontrol.Main.Activity.BaseActivitys.BorcActivity$AsynCallWsBorc.onPostExecute(BorcActivity.java:76)
+  at tax.megakent.org.vergicontrol.Main.Activity.BaseActivitys.BorcActivity$AsynCallWsBorc.onPostExecute(BorcActivity.java:53)
+  at android.os.AsyncTask.finish(AsyncTask.java:632)
+  at android.os.AsyncTask.access$600(AsyncTask.java:177)
+  at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:645)
+  at android.os.Handler.dispatchMessage(Handler.java:102)
+  at android.os.Looper.loop(Looper.java:136)
+  at android.app.ActivityThread.main(ActivityThread.java:5001)
+  at java.lang.reflect.Method.invokeNative(Native Method)
+  at java.lang.reflect.Method.invoke(Method.java:515)
+  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)
+  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)
+  at dalvik.system.NativeStart.main(Native Method)
+
+"OkHttp ConnectionPool" daemon prio=5 tid=13 TIMED_WAIT
+  | group="main" sCount=1 dsCount=0 obj=0xa6fde360 self=0xb98c25d8
+  | sysTid=18004 nice=10 sched=0/0 cgrp=apps handle=-1181996472
+  | state=S schedstat=( 511888 38919 4 ) utm=0 stm=0 core=2
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa6fde430> (a java.lang.VMThread) held by tid=13 (OkHttp ConnectionPool)
+  at java.lang.Thread.parkFor(Thread.java:1205)
+  at sun.misc.Unsafe.park(Unsafe.java:325)
+  at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:197)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2056)
+  at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:435)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+  at java.lang.Thread.run(Thread.java:841)
+
+"AsyncTask #1" prio=5 tid=14 WAIT
+  | group="main" sCount=1 dsCount=0 obj=0xa6fa6ae8 self=0xb980fa60
+  | sysTid=18003 nice=10 sched=0/0 cgrp=apps handle=-1182728496
+  | state=S schedstat=( 41589993 29623766 111 ) utm=2 stm=1 core=3
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa6fa6c80> (a java.lang.VMThread) held by tid=14 (AsyncTask #1)
+  at java.lang.Thread.parkFor(Thread.java:1205)
+  at sun.misc.Unsafe.park(Unsafe.java:325)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2017)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+  at java.lang.Thread.run(Thread.java:841)
+
+"Binder_3" prio=5 tid=12 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa507fd20 self=0xb97d39f0
+  | sysTid=17989 nice=0 sched=0/0 cgrp=apps handle=-1182976088
+  | state=S schedstat=( 1250270 517625 9 ) utm=0 stm=0 core=3
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Thread-631" prio=5 tid=11 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5078680 self=0xb9798d68
+  | sysTid=17983 nice=0 sched=0/0 cgrp=apps handle=-1183215144
+  | state=S schedstat=( 145953 0 2 ) utm=0 stm=0 core=0
+  #00  pc 0003d931  /system/lib/libc.so (accept+17)
+  at android.net.LocalSocketImpl.accept(Native Method)
+  at android.net.LocalSocketImpl.accept(LocalSocketImpl.java:328)
+  at android.net.LocalServerSocket.accept(LocalServerSocket.java:94)
+  at com.android.tools.fd.runtime.Server$SocketServerThread.run(Server.java:150)
+  at java.lang.Thread.run(Thread.java:841)
+
+"Binder_2" prio=5 tid=10 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5065260 self=0xb9794ec8
+  | sysTid=17982 nice=0 sched=0/0 cgrp=apps handle=-1184368880
+  | state=S schedstat=( 3446365 1661352 17 ) utm=0 stm=0 core=2
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Binder_1" prio=5 tid=9 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5061418 self=0xb967ecb0
+  | sysTid=17981 nice=0 sched=0/0 cgrp=apps handle=-1184372120
+  | state=S schedstat=( 2635945 1333326 23 ) utm=0 stm=0 core=0
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=8 WAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa505ff78 self=0xb967e2e8
+  | sysTid=17980 nice=0 sched=0/0 cgrp=apps handle=-1184381480
+  | state=S schedstat=( 131188 157170 4 ) utm=0 stm=0 core=2
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa4d420d8> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  at java.lang.Object.wait(Object.java:364)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.waitForObject(Daemons.java:230)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.run(Daemons.java:207)
+  at java.lang.Thread.run(Thread.java:841)
+
+"FinalizerDaemon" daemon prio=5 tid=7 WAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa505fdd8 self=0xb967bd18
+  | sysTid=17979 nice=0 sched=0/0 cgrp=apps handle=-1184382584
+  | state=S schedstat=( 2509617 640287 10 ) utm=0 stm=0 core=3
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa4d2d718> (a java.lang.ref.ReferenceQueue)
+  at java.lang.Object.wait(Object.java:401)
+  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:102)
+  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:73)
+  at java.lang.Daemons$FinalizerDaemon.run(Daemons.java:170)
+  at java.lang.Thread.run(Thread.java:841)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=6 WAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa505fc80 self=0xb967b458
+  | sysTid=17978 nice=0 sched=0/0 cgrp=apps handle=-1184384824
+  | state=S schedstat=( 144726 0 5 ) utm=0 stm=0 core=3
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa4d2d640> 
+  at java.lang.Object.wait(Object.java:364)
+  at java.lang.Daemons$ReferenceQueueDaemon.run(Daemons.java:130)
+  at java.lang.Thread.run(Thread.java:841)
+
+"Compiler" daemon prio=5 tid=5 VMWAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa505fb98 self=0xb967ade0
+  | sysTid=17977 nice=0 sched=0/0 cgrp=apps handle=-1184522104
+  | state=S schedstat=( 89975346 3267028 106 ) utm=5 stm=3 core=0
+  #00  pc 0003e397  /system/lib/libc.so (__futex_syscall4+23)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"JDWP" daemon prio=5 tid=4 VMWAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa505fab8 self=0xb9659a10
+  | sysTid=17976 nice=0 sched=0/0 cgrp=apps handle=-1184524344
+  | state=S schedstat=( 911016 421702 11 ) utm=0 stm=0 core=1
+  #00  pc 0003c770  /system/lib/libc.so (select+32)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Signal Catcher" daemon prio=5 tid=3 RUNNABLE
+  | group="system" sCount=0 dsCount=0 obj=0xa505f9c0 self=0xb9659150
+  | sysTid=17975 nice=0 sched=0/0 cgrp=apps handle=-1184526584
+  | state=R schedstat=( 4687121 260205 12 ) utm=0 stm=0 core=1
+  at dalvik.system.NativeStart.run(Native Method)
+
+"GC" daemon prio=5 tid=2 VMWAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa505f8e0 self=0xb9658a98
+  | sysTid=17973 nice=0 sched=0/0 cgrp=apps handle=-1184618040
+  | state=S schedstat=( 5552366 251579 430 ) utm=0 stm=0 core=3
+  #00  pc 0003e397  /system/lib/libc.so (__futex_syscall4+23)
+  at dalvik.system.NativeStart.run(Native Method)
+
+----- end 17970 -----
+
+
+----- pid 634 at 2017-07-18 16:39:28 -----
+Cmd line: system_server
+
+JNI: CheckJNI is off; workarounds are off; pins=4; globals=823 (plus 61 weak)
+
+DALVIK THREADS:
+(mutexes: tll=0 tsl=0 tscl=0 ghl=0)
+
+"main" prio=5 tid=1 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa4d38bd8 self=0xb963deb0
+  | sysTid=634 nice=-2 sched=0/0 cgrp=apps handle=-1216696256
+  | state=S schedstat=( 26939846130 4887998453 100240 ) utm=272 stm=2421 core=0
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00001387  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at com.android.server.ServerThread.initAndLoop(SystemServer.java:1103)
+  at com.android.server.SystemServer.main(SystemServer.java:1189)
+  at java.lang.reflect.Method.invokeNative(Native Method)
+  at java.lang.reflect.Method.invoke(Method.java:515)
+  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)
+  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)
+  at dalvik.system.NativeStart.main(Native Method)
+
+"Binder_D" prio=5 tid=69 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa55a78e0 self=0xb970d0a8
+  | sysTid=2081 nice=0 sched=0/0 cgrp=apps handle=-1183785560
+  | state=S schedstat=( 5044245789 743387812 22115 ) utm=144 stm=360 core=2
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Binder_C" prio=5 tid=68 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa55a77f8 self=0xb99373a0
+  | sysTid=2080 nice=0 sched=0/0 cgrp=apps handle=-1180987112
+  | state=S schedstat=( 5015724150 754673337 20756 ) utm=154 stm=347 core=3
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Binder_B" prio=5 tid=67 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa55a7710 self=0xb996ff08
+  | sysTid=2079 nice=0 sched=0/0 cgrp=apps handle=-1184092264
+  | state=S schedstat=( 4888504103 718035499 20704 ) utm=154 stm=334 core=0
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Binder_A" prio=5 tid=66 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa55a7628 self=0xb9991948
+  | sysTid=2078 nice=0 sched=0/0 cgrp=apps handle=-1181548976
+  | state=S schedstat=( 5175871081 852340255 21548 ) utm=146 stm=370 core=2
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"AsyncTask #5" prio=5 tid=63 WAIT
+  | group="main" sCount=1 dsCount=0 obj=0xa53da878 self=0xb98de968
+  | sysTid=1584 nice=10 sched=0/0 cgrp=apps handle=-1181491864
+  | state=S schedstat=( 144284396 46524167 1071 ) utm=4 stm=10 core=1
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa53da9c0> (a java.lang.VMThread) held by tid=63 (AsyncTask #5)
+  at java.lang.Thread.parkFor(Thread.java:1205)
+  at sun.misc.Unsafe.park(Unsafe.java:325)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2017)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+  at java.lang.Thread.run(Thread.java:841)
+
+"AsyncTask #4" prio=5 tid=46 WAIT
+  | group="main" sCount=1 dsCount=0 obj=0xa53da6f0 self=0xb982cf40
+  | sysTid=1583 nice=10 sched=0/0 cgrp=apps handle=-1184084024
+  | state=S schedstat=( 114097141 47455815 1101 ) utm=5 stm=6 core=2
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa53da808> (a java.lang.VMThread) held by tid=46 (AsyncTask #4)
+  at java.lang.Thread.parkFor(Thread.java:1205)
+  at sun.misc.Unsafe.park(Unsafe.java:325)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2017)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+  at java.lang.Thread.run(Thread.java:841)
+
+"SoundPool" prio=5 tid=65 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa53fd1e0 self=0xb993f460
+  | sysTid=1146 nice=0 sched=0/0 cgrp=apps handle=-1181877968
+  | state=S schedstat=( 36320142 5696923 480 ) utm=0 stm=2 core=3
+  #00  pc 0003e397  /system/lib/libc.so (__futex_syscall4+23)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"SoundPoolThread" prio=5 tid=64 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa53fd0e8 self=0xb99095e0
+  | sysTid=1147 nice=0 sched=0/0 cgrp=apps handle=-1181877384
+  | state=S schedstat=( 29096129 16886112 24 ) utm=0 stm=2 core=3
+  #00  pc 0003e397  /system/lib/libc.so (__futex_syscall4+23)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"AsyncTask #3" prio=5 tid=62 WAIT
+  | group="main" sCount=1 dsCount=0 obj=0xa53e9f68 self=0xb9941b30
+  | sysTid=1102 nice=10 sched=0/0 cgrp=apps handle=-1181476752
+  | state=S schedstat=( 115287921 41487587 881 ) utm=3 stm=7 core=2
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa5280030> (a java.lang.VMThread) held by tid=62 (AsyncTask #3)
+  at java.lang.Thread.parkFor(Thread.java:1205)
+  at sun.misc.Unsafe.park(Unsafe.java:325)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2017)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+  at java.lang.Thread.run(Thread.java:841)
+
+"SyncHandler-0" prio=5 tid=61 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa535fe28 self=0xb98a5578
+  | sysTid=1099 nice=0 sched=0/0 cgrp=apps handle=-1181486664
+  | state=S schedstat=( 508205 1697237 13 ) utm=0 stm=0 core=2
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00111897  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"AsyncTask #2" prio=5 tid=60 WAIT
+  | group="main" sCount=1 dsCount=0 obj=0xa53ef820 self=0xb98b34e0
+  | sysTid=1098 nice=10 sched=0/0 cgrp=apps handle=-1182103216
+  | state=S schedstat=( 4760171516 392434494 75864 ) utm=160 stm=316 core=2
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa52f9518> (a java.lang.VMThread) held by tid=60 (AsyncTask #2)
+  at java.lang.Thread.parkFor(Thread.java:1205)
+  at sun.misc.Unsafe.park(Unsafe.java:325)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2017)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+  at java.lang.Thread.run(Thread.java:841)
+
+"Binder_9" prio=5 tid=59 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa53992e8 self=0xb990d488
+  | sysTid=966 nice=0 sched=0/0 cgrp=apps handle=-1182042376
+  | state=S schedstat=( 5507006561 1090849659 20006 ) utm=146 stm=404 core=3
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"DhcpStateMachine" prio=5 tid=58 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa53bfe08 self=0xb989fc80
+  | sysTid=877 nice=0 sched=0/0 cgrp=apps handle=-1184546328
+  | state=S schedstat=( 29970918 48246912 26 ) utm=0 stm=2 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00128d97  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"gps_state_thread" prio=5 tid=57 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa539c2c8 self=0xb98b8020
+  | sysTid=866 nice=0 sched=0/0 cgrp=apps handle=-1182040616
+  | state=S schedstat=( 149055 373510 2 ) utm=0 stm=0 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Binder_8" prio=5 tid=56 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa53313d0 self=0xb98a0ff0
+  | sysTid=857 nice=0 sched=0/0 cgrp=apps handle=-1181887032
+  | state=S schedstat=( 6046533401 1347843190 22194 ) utm=165 stm=439 core=3
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Binder_7" prio=5 tid=55 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa536d2a8 self=0xb96b2b58
+  | sysTid=854 nice=0 sched=0/0 cgrp=apps handle=-1181885088
+  | state=S schedstat=( 5886064824 1120845602 21297 ) utm=157 stm=430 core=2
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Binder_6" prio=5 tid=54 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa538c4f8 self=0xb98bc4c0
+  | sysTid=820 nice=0 sched=0/0 cgrp=apps handle=-1182013880
+  | state=S schedstat=( 5664687286 1065438144 21023 ) utm=156 stm=409 core=1
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"gps_state_thread" prio=5 tid=53 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa536a868 self=0xb98bacb8
+  | sysTid=802 nice=0 sched=0/0 cgrp=apps handle=-1182030728
+  | state=S schedstat=( 777388 4506883 7 ) utm=0 stm=0 core=2
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"NetworkTimeUpdateService" prio=5 tid=52 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5369580 self=0xb98b9d68
+  | sysTid=797 nice=0 sched=0/0 cgrp=apps handle=-1182031400
+  | state=S schedstat=( 8168358 28298024 32 ) utm=0 stm=0 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00126477  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"Binder_5" prio=5 tid=51 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5332db0 self=0xb98b89a0
+  | sysTid=795 nice=0 sched=0/0 cgrp=apps handle=-1182038184
+  | state=S schedstat=( 5797129971 1317773775 20997 ) utm=170 stm=409 core=0
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Binder_4" prio=5 tid=50 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5332cc8 self=0xb98b5188
+  | sysTid=787 nice=0 sched=0/0 cgrp=apps handle=-1182054384
+  | state=S schedstat=( 5571317871 1089651044 21216 ) utm=143 stm=413 core=2
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"watchdog" prio=5 tid=49 TIMED_WAIT
+  | group="main" sCount=1 dsCount=0 obj=0xa50cc060 self=0xb9887808
+  | sysTid=767 nice=-2 sched=0/0 cgrp=apps handle=-1182237576
+  | state=S schedstat=( 439785373 19506979 1475 ) utm=5 stm=38 core=2
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa50cc060> (a com.android.server.Watchdog)
+  at java.lang.Object.wait(Object.java:401)
+  at com.android.server.Watchdog.run(Watchdog.java:356)
+
+"UsbService host thread" prio=5 tid=48 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5346710 self=0xb9884a58
+  | sysTid=766 nice=-2 sched=0/0 cgrp=apps handle=-1182249272
+  | state=S schedstat=( 732791 72258 6 ) utm=0 stm=0 core=2
+  #00  pc 0003c144  /system/lib/libc.so (read+20)
+  at com.android.server.usb.UsbHostManager.monitorUsbHostBus(Native Method)
+  at com.android.server.usb.UsbHostManager.access$000(UsbHostManager.java:38)
+  at com.android.server.usb.UsbHostManager$1.run(UsbHostManager.java:176)
+  at java.lang.Thread.run(Thread.java:841)
+
+"CaptivePortalTracker" prio=5 tid=47 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa52e7630 self=0xb9861de0
+  | sysTid=758 nice=0 sched=0/0 cgrp=apps handle=-1182391728
+  | state=S schedstat=( 14328749 5265935 71 ) utm=0 stm=1 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 000e288f  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"Binder_3" prio=5 tid=45 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5308c80 self=0xb982c8c0
+  | sysTid=708 nice=0 sched=0/0 cgrp=apps handle=-1182269496
+  | state=S schedstat=( 5723364237 1214115586 22435 ) utm=150 stm=421 core=3
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Thread-58" prio=5 tid=44 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa53060d0 self=0xb98817c0
+  | sysTid=706 nice=-2 sched=0/0 cgrp=apps handle=-1182262224
+  | state=S schedstat=( 559279 344804 5 ) utm=0 stm=0 core=1
+  #00  pc 0003d931  /system/lib/libc.so (accept+17)
+  at libcore.io.Posix.accept(Native Method)
+  at libcore.io.BlockGuardOs.accept(BlockGuardOs.java:55)
+  at com.android.server.am.NativeCrashListener.run(NativeCrashListener.java:129)
+
+"AsyncTask #1" prio=5 tid=41 WAIT
+  | group="main" sCount=1 dsCount=0 obj=0xa528b528 self=0xb987a0c0
+  | sysTid=705 nice=10 sched=0/0 cgrp=apps handle=-1182621200
+  | state=S schedstat=( 160751869 33515250 1126 ) utm=4 stm=11 core=3
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa528b690> (a java.lang.VMThread) held by tid=41 (AsyncTask #1)
+  at java.lang.Thread.parkFor(Thread.java:1205)
+  at sun.misc.Unsafe.park(Unsafe.java:325)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2017)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+  at java.lang.Thread.run(Thread.java:841)
+
+"WifiMonitor" prio=5 tid=43 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa52b18b8 self=0xb9882158
+  | sysTid=691 nice=0 sched=0/0 cgrp=apps handle=-1182259768
+  | state=S schedstat=( 27762514 52706341 15 ) utm=0 stm=2 core=3
+  #00  pc 0003e146  /system/lib/libc.so (poll+22)
+  at android.net.wifi.WifiNative.waitForEventNative(Native Method)
+  at android.net.wifi.WifiNative.waitForEvent(WifiNative.java:131)
+  at android.net.wifi.WifiMonitor$MonitorThread.run(WifiMonitor.java:503)
+
+"GenydConnector" prio=5 tid=42 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa52f1df8 self=0xb9839810
+  | sysTid=688 nice=-2 sched=0/0 cgrp=apps handle=-1182557056
+  | state=S schedstat=( 55233297 4690300 109 ) utm=2 stm=3 core=3
+  #00  pc 0003db11  /system/lib/libc.so (recvmsg+17)
+  at android.net.LocalSocketImpl.readba_native(Native Method)
+  at android.net.LocalSocketImpl.access$400(LocalSocketImpl.java:33)
+  at android.net.LocalSocketImpl$SocketInputStream.read(LocalSocketImpl.java:98)
+  at com.android.server.NativeDaemonConnector.listenToSocket(NativeDaemonConnector.java:141)
+  at com.android.server.NativeDaemonConnector.run(NativeDaemonConnector.java:88)
+  at java.lang.Thread.run(Thread.java:841)
+
+"backup" prio=5 tid=40 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa52b64f8 self=0xb9836b10
+  | sysTid=686 nice=10 sched=0/0 cgrp=apps handle=-1182568576
+  | state=S schedstat=( 225768482 474892455 3400 ) utm=2 stm=20 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 000a253f  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"UEventObserver" prio=5 tid=39 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5268110 self=0xb9835e60
+  | sysTid=685 nice=-2 sched=0/0 cgrp=apps handle=-1182571824
+  | state=S schedstat=( 286008 788743 4 ) utm=0 stm=0 core=3
+  (native backtrace unavailable)
+  at android.os.UEventObserver.nativeWaitForNextEvent(Native Method)
+  at android.os.UEventObserver.access$100(UEventObserver.java:41)
+  at android.os.UEventObserver$UEventThread.run(UEventObserver.java:182)
+
+"AudioService" prio=5 tid=38 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa524eb18 self=0xb982a490
+  | sysTid=684 nice=-2 sched=0/0 cgrp=apps handle=-1182606120
+  | state=S schedstat=( 358537507 203286001 3328 ) utm=2 stm=32 core=3
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00098f8f  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.media.AudioService$AudioSystemThread.run(AudioService.java:3208)
+
+"mDnsConnector" prio=5 tid=37 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5274a40 self=0xb97e8e30
+  | sysTid=683 nice=-2 sched=0/0 cgrp=apps handle=-1182887264
+  | state=S schedstat=( 273297 409370 3 ) utm=0 stm=0 core=1
+  #00  pc 0003db11  /system/lib/libc.so (recvmsg+17)
+  at android.net.LocalSocketImpl.readba_native(Native Method)
+  at android.net.LocalSocketImpl.access$400(LocalSocketImpl.java:33)
+  at android.net.LocalSocketImpl$SocketInputStream.read(LocalSocketImpl.java:98)
+  at com.android.server.NativeDaemonConnector.listenToSocket(NativeDaemonConnector.java:141)
+  at com.android.server.NativeDaemonConnector.run(NativeDaemonConnector.java:88)
+  at java.lang.Thread.run(Thread.java:841)
+
+"NsdService" prio=5 tid=36 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa522b2d8 self=0xb97e85a8
+  | sysTid=682 nice=0 sched=0/0 cgrp=apps handle=-1182678152
+  | state=S schedstat=( 629590 212387 6 ) utm=0 stm=0 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00086dff  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"WifiWatchdogStateMachine" prio=5 tid=35 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa523b808 self=0xb981bed8
+  | sysTid=681 nice=0 sched=0/0 cgrp=apps handle=-1182680216
+  | state=S schedstat=( 16646191 2478925 88 ) utm=0 stm=1 core=2
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00087cd7  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"WifiManager" prio=5 tid=34 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa52727e8 self=0xb981b250
+  | sysTid=680 nice=0 sched=0/0 cgrp=apps handle=-1182724080
+  | state=S schedstat=( 37606231 45599002 301 ) utm=0 stm=3 core=3
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0005e6bf  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"ConnectivityServiceThread" prio=5 tid=33 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa516c7a8 self=0xb981e028
+  | sysTid=679 nice=0 sched=0/0 cgrp=apps handle=-1182669672
+  | state=S schedstat=( 1020486019 286705888 3539 ) utm=26 stm=76 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00070677  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"WifiService" prio=5 tid=32 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5231980 self=0xb97ef5c8
+  | sysTid=678 nice=0 sched=0/0 cgrp=apps handle=-1182768424
+  | state=S schedstat=( 6360306 578891 18 ) utm=0 stm=0 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0005daa7  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"WifiStateMachine" prio=5 tid=31 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5297078 self=0xb9801640
+  | sysTid=677 nice=0 sched=0/0 cgrp=apps handle=-1182794136
+  | state=S schedstat=( 7077312284 479263529 30854 ) utm=58 stm=649 core=0
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0006938f  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"WifiP2pService" prio=5 tid=27 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5290508 self=0xb97fc128
+  | sysTid=676 nice=0 sched=0/0 cgrp=apps handle=-1182808680
+  | state=S schedstat=( 19879794 404747 17 ) utm=0 stm=1 core=3
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 000680c7  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"NetworkPolicy" prio=5 tid=30 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5267010 self=0xb97f3b90
+  | sysTid=675 nice=0 sched=0/0 cgrp=apps handle=-1182973960
+  | state=S schedstat=( 3415493042 954731690 22620 ) utm=115 stm=226 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 000422cf  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"NetworkStats" prio=5 tid=29 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50ed558 self=0xb97efb68
+  | sysTid=674 nice=0 sched=0/0 cgrp=apps handle=-1182873056
+  | state=S schedstat=( 10833922568 2159562289 47592 ) utm=480 stm=602 core=2
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0005beb7  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"NetdConnector" prio=5 tid=28 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa51c8e38 self=0xb97ee900
+  | sysTid=673 nice=-2 sched=0/0 cgrp=apps handle=-1182864016
+  | state=S schedstat=( 3543833916 568296190 13124 ) utm=178 stm=175 core=0
+  #00  pc 0003db11  /system/lib/libc.so (recvmsg+17)
+  at android.net.LocalSocketImpl.readba_native(Native Method)
+  at android.net.LocalSocketImpl.access$400(LocalSocketImpl.java:33)
+  at android.net.LocalSocketImpl$SocketInputStream.read(LocalSocketImpl.java:98)
+  at com.android.server.NativeDaemonConnector.listenToSocket(NativeDaemonConnector.java:141)
+  at com.android.server.NativeDaemonConnector.run(NativeDaemonConnector.java:88)
+  at java.lang.Thread.run(Thread.java:841)
+
+"VoldConnector" prio=5 tid=26 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5242b78 self=0xb97ee020
+  | sysTid=671 nice=-2 sched=0/0 cgrp=apps handle=-1182900280
+  | state=S schedstat=( 2049704 24984802 9 ) utm=0 stm=0 core=1
+  #00  pc 0003db11  /system/lib/libc.so (recvmsg+17)
+  at android.net.LocalSocketImpl.readba_native(Native Method)
+  at android.net.LocalSocketImpl.access$400(LocalSocketImpl.java:33)
+  at android.net.LocalSocketImpl$SocketInputStream.read(LocalSocketImpl.java:98)
+  at com.android.server.NativeDaemonConnector.listenToSocket(NativeDaemonConnector.java:141)
+  at com.android.server.NativeDaemonConnector.run(NativeDaemonConnector.java:88)
+  at java.lang.Thread.run(Thread.java:841)
+
+"MountService" prio=5 tid=23 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5231ef8 self=0xb97ecd98
+  | sysTid=670 nice=0 sched=0/0 cgrp=apps handle=-1182940664
+  | state=S schedstat=( 752654 274726 6 ) utm=0 stm=0 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00038337  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"InputReader" prio=5 tid=25 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5254790 self=0xb97e6d38
+  | sysTid=668 nice=-8 sched=0/0 cgrp=apps handle=-1182904144
+  | state=S schedstat=( 776000866 105799095 3018 ) utm=18 stm=59 core=2
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00043e83  /system/lib/libinputservice.so (android::InputReader::loopOnce()+227)
+  #02  pc 00001ce7  /system/lib/libinputservice.so (vtable for android::InputReader::ContextImpl+4294512647)
+  #03  pc 0003e0af  /system/lib/libinputservice.so
+  at dalvik.system.NativeStart.run(Native Method)
+
+"InputDispatcher" prio=5 tid=24 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5254698 self=0xb97e6638
+  | sysTid=666 nice=-8 sched=0/0 cgrp=apps handle=-1183197104
+  | state=S schedstat=( 1524770680 512404338 19830 ) utm=12 stm=140 core=2
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00038f2f  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at dalvik.system.NativeStart.run(Native Method)
+
+"AlarmManager" prio=5 tid=22 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa51a6e68 self=0xb97cfb28
+  | sysTid=663 nice=-2 sched=0/0 cgrp=apps handle=-1182990440
+  | state=S schedstat=( 607010961 42052112 917 ) utm=16 stm=43 core=2
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  #01  pc 00086da2  /system/lib/libdvm.so (dvmCallJNIMethod(unsigned int const*, JValue*, Method const*, Thread*)+434)
+  #02  pc 00000101  <unknown>
+  at com.android.server.AlarmManagerService.waitForAlarm(Native Method)
+  at com.android.server.AlarmManagerService.access$300(AlarmManagerService.java:67)
+  at com.android.server.AlarmManagerService$AlarmThread.run(AlarmManagerService.java:1161)
+
+"PowerManagerService" prio=5 tid=21 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5159690 self=0xb97c4550
+  | sysTid=662 nice=0 sched=0/0 cgrp=apps handle=-1183029384
+  | state=S schedstat=( 3373634130 1310125083 24665 ) utm=42 stm=294 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 000393df  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"PackageManager" prio=5 tid=20 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50b2190 self=0xb9673188
+  | sysTid=657 nice=10 sched=0/0 cgrp=apps handle=-1184418312
+  | state=S schedstat=( 18302513296 5670757126 87747 ) utm=1202 stm=627 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0000a33f  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"FileObserver" prio=5 tid=19 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50ac550 self=0xb979cde0
+  | sysTid=656 nice=-2 sched=0/0 cgrp=apps handle=-1184420552
+  | state=S schedstat=( 902227975 161326324 3586 ) utm=34 stm=56 core=0
+  (native backtrace unavailable)
+  at android.os.FileObserver$ObserverThread.observe(Native Method)
+  at android.os.FileObserver$ObserverThread.run(FileObserver.java:88)
+
+"CpuTracker" prio=5 tid=18 TIMED_WAIT
+  | group="main" sCount=1 dsCount=0 obj=0xa50c2fe8 self=0xb979b4d8
+  | sysTid=655 nice=-2 sched=0/0 cgrp=apps handle=-1183205048
+  | state=S schedstat=( 378816546 29530323 411 ) utm=8 stm=29 core=1
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa50c2fe8> (a com.android.server.am.ActivityManagerService$4)
+  at java.lang.Object.wait(Object.java:401)
+  at com.android.server.am.ActivityManagerService$4.run(ActivityManagerService.java:2025)
+
+"android.io" prio=5 tid=17 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50d37d0 self=0xb979a7d8
+  | sysTid=654 nice=0 sched=0/0 cgrp=apps handle=-1183208376
+  | state=S schedstat=( 1189217 5192653 18 ) utm=0 stm=0 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00006207  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"android.ui" prio=5 tid=16 SUSPENDED
+  | group="main" sCount=1 dsCount=0 obj=0xa50d40f8 self=0xb9799bd8
+  | sysTid=653 nice=-2 sched=0/0 cgrp=apps handle=-1183211448
+  | state=S schedstat=( 94310692234 7344261093 644905 ) utm=882 stm=8548 core=0
+  #00  pc 0003e397  /system/lib/libc.so (__futex_syscall4+23)
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"android.fg" prio=5 tid=15 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50d4a40 self=0xb9799520
+  | sysTid=652 nice=0 sched=0/0 cgrp=apps handle=-1183213168
+  | state=S schedstat=( 1584698550 155983999 7451 ) utm=41 stm=117 core=2
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00007a87  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"android.bg" prio=5 tid=14 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50645e0 self=0xb9798708
+  | sysTid=650 nice=10 sched=0/0 cgrp=apps handle=-1183216776
+  | state=S schedstat=( 12972681565 4751687823 15803 ) utm=426 stm=870 core=3
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00004137  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"ActivityManager" prio=5 tid=13 SUSPENDED
+  | group="main" sCount=1 dsCount=0 obj=0xa5060670 self=0xb9797930
+  | sysTid=649 nice=-2 sched=0/0 cgrp=apps handle=-1183220320
+  | state=S schedstat=( 17413773869 4311797009 68650 ) utm=578 stm=1162 core=2
+  #00  pc 0003e397  /system/lib/libc.so (__futex_syscall4+23)
+  at android.os.Process.sendSignal(Native Method)
+  at com.android.server.am.ActivityManagerService.dumpStackTraces(ActivityManagerService.java:3828)
+  at com.android.server.am.ActivityManagerService.dumpStackTraces(ActivityManagerService.java:3806)
+  at com.android.server.am.ActivityManagerService.appNotResponding(ActivityManagerService.java:4045)
+  at com.android.server.am.ActivityManagerService$10.run(ActivityManagerService.java:8625)
+  at android.os.Handler.handleCallback(Handler.java:733)
+  at android.os.Handler.dispatchMessage(Handler.java:95)
+  at android.os.Looper.loop(Looper.java:136)
+  at com.android.server.am.ActivityManagerService$AThread.run(ActivityManagerService.java:1870)
+
+"WindowManager" prio=5 tid=12 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa505d0b0 self=0xb9796ac8
+  | sysTid=648 nice=-4 sched=0/0 cgrp=apps handle=-1183224008
+  | state=S schedstat=( 23565072240 4311513843 106471 ) utm=753 stm=1602 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 000024cf  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"SensorService" prio=5 tid=11 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa505cb98 self=0xb97963c8
+  | sysTid=647 nice=-8 sched=0/0 cgrp=apps handle=-1183227744
+  | state=S schedstat=( 120485179807 7974378603 642058 ) utm=44 stm=12004 core=1
+  #00  pc 0003c770  /system/lib/libc.so (select+32)
+  #01  pc 0000be4f  /system/lib/libsensorservice.so
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Binder_2" prio=5 tid=10 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5058f30 self=0xb967f570
+  | sysTid=646 nice=0 sched=0/0 cgrp=apps handle=-1184369880
+  | state=S schedstat=( 5847506185 1258762046 20833 ) utm=158 stm=426 core=0
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Binder_1" prio=5 tid=9 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5058cf8 self=0xb967eba8
+  | sysTid=645 nice=0 sched=0/0 cgrp=apps handle=-1184372384
+  | state=S schedstat=( 5680960747 1307765601 21485 ) utm=163 stm=404 core=3
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=8 WAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa5055880 self=0xb967e2e8
+  | sysTid=644 nice=0 sched=0/0 cgrp=apps handle=-1184381480
+  | state=S schedstat=( 67449052 32475438 390 ) utm=0 stm=6 core=1
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa4d420d8> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  at java.lang.Object.wait(Object.java:364)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.waitForObject(Daemons.java:230)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.run(Daemons.java:207)
+  at java.lang.Thread.run(Thread.java:841)
+
+"FinalizerDaemon" daemon prio=5 tid=7 WAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa50556e0 self=0xb967bd18
+  | sysTid=643 nice=0 sched=0/0 cgrp=apps handle=-1184382584
+  | state=S schedstat=( 1857247551 368676876 2662 ) utm=26 stm=158 core=3
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa4d2d718> (a java.lang.ref.ReferenceQueue)
+  at java.lang.Object.wait(Object.java:401)
+  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:102)
+  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:73)
+  at java.lang.Daemons$FinalizerDaemon.run(Daemons.java:170)
+  at java.lang.Thread.run(Thread.java:841)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=6 WAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa5055588 self=0xb967b458
+  | sysTid=642 nice=0 sched=0/0 cgrp=apps handle=-1184384824
+  | state=S schedstat=( 376713409 71193169 1546 ) utm=2 stm=35 core=3
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa4d2d640> 
+  at java.lang.Object.wait(Object.java:364)
+  at java.lang.Daemons$ReferenceQueueDaemon.run(Daemons.java:130)
+  at java.lang.Thread.run(Thread.java:841)
+
+"Compiler" daemon prio=5 tid=5 VMWAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa50554a0 self=0xb967ade0
+  | sysTid=641 nice=0 sched=0/0 cgrp=apps handle=-1184522104
+  | state=S schedstat=( 21931580165 4185664616 26491 ) utm=972 stm=1220 core=1
+  #00  pc 0003e397  /system/lib/libc.so (__futex_syscall4+23)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"JDWP" daemon prio=5 tid=4 VMWAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa50553c0 self=0xb9659a10
+  | sysTid=640 nice=0 sched=0/0 cgrp=apps handle=-1184524344
+  | state=S schedstat=( 25243220 2983027 20 ) utm=0 stm=2 core=0
+  #00  pc 0003c770  /system/lib/libc.so (select+32)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Signal Catcher" daemon prio=5 tid=3 RUNNABLE
+  | group="system" sCount=0 dsCount=0 obj=0xa50552c8 self=0xb9659150
+  | sysTid=637 nice=0 sched=0/0 cgrp=apps handle=-1184526584
+  | state=R schedstat=( 27248324 7163060 122 ) utm=0 stm=2 core=3
+  at dalvik.system.NativeStart.run(Native Method)
+
+"GC" daemon prio=5 tid=2 VMWAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa50551e8 self=0xb9658a98
+  | sysTid=636 nice=0 sched=0/0 cgrp=apps handle=-1184618040
+  | state=S schedstat=( 2484696243 1543360606 252222 ) utm=4 stm=244 core=3
+  #00  pc 0003e397  /system/lib/libc.so (__futex_syscall4+23)
+  at dalvik.system.NativeStart.run(Native Method)
+
+NATIVE THREADS:
+"AudioTrack" sysTid=4974 nice=-16 sched=0/0 cgrp=apps
+  | state=S schedstat=( 811855 279718 14 ) utm=0 stm=0 core=2
+
+"AudioTrack" sysTid=17870 nice=-16 sched=0/0 cgrp=apps
+  | state=S schedstat=( 954630 49292 14 ) utm=0 stm=0 core=0
+
+"AudioTrack" sysTid=18001 nice=-16 sched=0/0 cgrp=apps
+  | state=S schedstat=( 548668 56278 13 ) utm=0 stm=0 core=1
+
+----- end 634 -----
+
+
+----- pid 813 at 2017-07-18 16:39:28 -----
+Cmd line: com.android.phone
+
+JNI: CheckJNI is off; workarounds are off; pins=1; globals=354
+
+DALVIK THREADS:
+(mutexes: tll=0 tsl=0 tscl=0 ghl=0)
+
+"main" prio=5 tid=1 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa4d38bd8 self=0xb963deb0
+  | sysTid=813 nice=0 sched=0/0 cgrp=apps handle=-1216696256
+  | state=S schedstat=( 45382397771 13700613904 264646 ) utm=692 stm=3845 core=3
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0004a04f  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.app.ActivityThread.main(ActivityThread.java:5001)
+  at java.lang.reflect.Method.invokeNative(Native Method)
+  at java.lang.reflect.Method.invoke(Method.java:515)
+  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)
+  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)
+  at dalvik.system.NativeStart.main(Native Method)
+
+"AsyncTask #2" prio=5 tid=30 WAIT
+  | group="main" sCount=1 dsCount=0 obj=0xa5131b28 self=0xb981e5c8
+  | sysTid=16884 nice=10 sched=0/0 cgrp=apps handle=-1182721216
+  | state=S schedstat=( 2372592 3413488 136 ) utm=0 stm=0 core=0
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa5131c40> (a java.lang.VMThread) held by tid=30 (AsyncTask #2)
+  at java.lang.Thread.parkFor(Thread.java:1205)
+  at sun.misc.Unsafe.park(Unsafe.java:325)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2017)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+  at java.lang.Thread.run(Thread.java:841)
+
+"Binder_4" prio=5 tid=29 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50d89a0 self=0xb9806800
+  | sysTid=1100 nice=0 sched=0/0 cgrp=apps handle=-1182767688
+  | state=S schedstat=( 514481573 201489378 4072 ) utm=15 stm=36 core=1
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"SyncHandler-0" prio=5 tid=28 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5156580 self=0xb9800d40
+  | sysTid=1072 nice=0 sched=0/0 cgrp=apps handle=-1182771000
+  | state=S schedstat=( 7586656 10314145 15 ) utm=0 stm=0 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0006a5e7  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"Binder_3" prio=5 tid=27 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5082510 self=0xb97a6218
+  | sysTid=1006 nice=0 sched=0/0 cgrp=apps handle=-1182961536
+  | state=S schedstat=( 628476645 232526122 4177 ) utm=16 stm=46 core=1
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Cat Icon Loader" prio=5 tid=26 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50c4430 self=0xb97d7c58
+  | sysTid=1005 nice=0 sched=0/0 cgrp=apps handle=-1182957368
+  | state=S schedstat=( 410889 143863 5 ) utm=0 stm=0 core=2
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00010337  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"RilMessageDecoder" prio=5 tid=25 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50e0420 self=0xb97a7078
+  | sysTid=1004 nice=0 sched=0/0 cgrp=apps handle=-1183157016
+  | state=S schedstat=( 9107263 313959 7 ) utm=0 stm=0 core=2
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0003fcef  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"Cat Telephony service" prio=5 tid=24 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50fb508 self=0xb97d4790
+  | sysTid=1003 nice=0 sched=0/0 cgrp=apps handle=-1183197488
+  | state=S schedstat=( 379719 0 5 ) utm=0 stm=0 core=2
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00028237  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"WifiManager" prio=5 tid=23 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50a10f0 self=0xb97ea760
+  | sysTid=994 nice=0 sched=0/0 cgrp=apps handle=-1182880816
+  | state=S schedstat=( 24217853 11183544 302 ) utm=0 stm=2 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00044b4f  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"SipService.Executor" prio=5 tid=22 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50a0be8 self=0xb97c9090
+  | sysTid=992 nice=0 sched=0/0 cgrp=apps handle=-1182883056
+  | state=S schedstat=( 398063 601995 5 ) utm=0 stm=0 core=0
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00045807  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"AudioTrack" prio=5 tid=21 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50cc9a8 self=0xb97a5778
+  | sysTid=988 nice=-16 sched=0/0 cgrp=apps handle=-1182967472
+  | state=S schedstat=( 225983 1343234 3 ) utm=0 stm=0 core=3
+  #00  pc 0003e397  /system/lib/libc.so (__futex_syscall4+23)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"AsyncTask #1" prio=5 tid=20 WAIT
+  | group="main" sCount=1 dsCount=0 obj=0xa50c6848 self=0xb97d4df8
+  | sysTid=980 nice=10 sched=0/0 cgrp=apps handle=-1183165136
+  | state=S schedstat=( 2959215 8436509 19 ) utm=0 stm=0 core=1
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa50c69c8> (a java.lang.VMThread) held by tid=20 (AsyncTask #1)
+  at java.lang.Thread.parkFor(Thread.java:1205)
+  at sun.misc.Unsafe.park(Unsafe.java:325)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2017)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+  at java.lang.Thread.run(Thread.java:841)
+
+"AsyncQueryWorker" prio=5 tid=19 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50bee08 self=0xb97a4bf8
+  | sysTid=978 nice=0 sched=0/0 cgrp=apps handle=-1182988960
+  | state=S schedstat=( 895340 5170900 11 ) utm=0 stm=0 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0003a557  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"CdmaServiceCategoryProgramHandler" prio=5 tid=18 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50ab7f8 self=0xb97a4020
+  | sysTid=948 nice=0 sched=0/0 cgrp=apps handle=-1183171280
+  | state=S schedstat=( 7132003 13943738 9 ) utm=0 stm=0 core=2
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0000f81f  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"CdmaInboundSmsHandler" prio=5 tid=17 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50aa6d0 self=0xb97a3520
+  | sysTid=932 nice=0 sched=0/0 cgrp=apps handle=-1183188536
+  | state=S schedstat=( 8368014 12121491 9 ) utm=0 stm=0 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0000ece7  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"CellBroadcastHandler" prio=5 tid=16 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50aa0a8 self=0xb979f350
+  | sysTid=931 nice=0 sched=0/0 cgrp=apps handle=-1183175184
+  | state=S schedstat=( 2179074 1206460 9 ) utm=0 stm=0 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0000e397  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"GsmInboundSmsHandler" prio=5 tid=15 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50a84f0 self=0xb979ea90
+  | sysTid=909 nice=0 sched=0/0 cgrp=apps handle=-1183191296
+  | state=S schedstat=( 708662 11912996 13 ) utm=0 stm=0 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0000dda7  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"GsmCellBroadcastHandler" prio=5 tid=14 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50a7b58 self=0xb979e050
+  | sysTid=908 nice=0 sched=0/0 cgrp=apps handle=-1183193536
+  | state=S schedstat=( 2210183 987214 12 ) utm=0 stm=0 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0000db37  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"DcHandlerThread" prio=5 tid=13 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa508faf0 self=0xb979d108
+  | sysTid=894 nice=0 sched=0/0 cgrp=apps handle=-1183196824
+  | state=S schedstat=( 36223542 41328858 58 ) utm=1 stm=2 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0000cd97  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"RILReceiver" prio=5 tid=12 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa507ddc8 self=0xb979c800
+  | sysTid=879 nice=0 sched=0/0 cgrp=apps handle=-1183200072
+  | state=S schedstat=( 805595870 145692528 4556 ) utm=31 stm=49 core=3
+  #00  pc 0003db11  /system/lib/libc.so (recvmsg+17)
+  at android.net.LocalSocketImpl.readba_native(Native Method)
+  at android.net.LocalSocketImpl.access$400(LocalSocketImpl.java:33)
+  at android.net.LocalSocketImpl$SocketInputStream.read(LocalSocketImpl.java:98)
+  at com.android.internal.telephony.RIL.readRilMessage(RIL.java:421)
+  at com.android.internal.telephony.RIL.access$400(RIL.java:215)
+  at com.android.internal.telephony.RIL$RILReceiver.run(RIL.java:521)
+  at java.lang.Thread.run(Thread.java:841)
+
+"RILSender" prio=5 tid=11 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa507b850 self=0xb979a9f8
+  | sysTid=878 nice=0 sched=0/0 cgrp=apps handle=-1183211056
+  | state=S schedstat=( 559305602 38980974 3613 ) utm=7 stm=48 core=3
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0000b487  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"Binder_2" prio=5 tid=10 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa5061640 self=0xb9794ec8
+  | sysTid=826 nice=0 sched=0/0 cgrp=apps handle=-1184368360
+  | state=S schedstat=( 728484602 245361997 4232 ) utm=21 stm=51 core=0
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Binder_1" prio=5 tid=9 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50613f8 self=0xb967eed0
+  | sysTid=825 nice=0 sched=0/0 cgrp=apps handle=-1184372384
+  | state=S schedstat=( 605610425 284632490 4241 ) utm=17 stm=43 core=3
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=8 WAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa505cc48 self=0xb967e2e8
+  | sysTid=824 nice=0 sched=0/0 cgrp=apps handle=-1184381480
+  | state=S schedstat=( 17283005 19797082 239 ) utm=0 stm=1 core=3
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa4d420d8> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  at java.lang.Object.wait(Object.java:364)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.waitForObject(Daemons.java:230)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.run(Daemons.java:207)
+  at java.lang.Thread.run(Thread.java:841)
+
+"FinalizerDaemon" daemon prio=5 tid=7 WAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa505caa8 self=0xb967bd18
+  | sysTid=823 nice=0 sched=0/0 cgrp=apps handle=-1184382584
+  | state=S schedstat=( 91996431 24777115 738 ) utm=0 stm=8 core=3
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa4d2d718> (a java.lang.ref.ReferenceQueue)
+  at java.lang.Object.wait(Object.java:401)
+  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:102)
+  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:73)
+  at java.lang.Daemons$FinalizerDaemon.run(Daemons.java:170)
+  at java.lang.Thread.run(Thread.java:841)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=6 WAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa505c950 self=0xb967b458
+  | sysTid=822 nice=0 sched=0/0 cgrp=apps handle=-1184384824
+  | state=S schedstat=( 34966408 18903379 805 ) utm=0 stm=3 core=3
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa4d2d640> 
+  at java.lang.Object.wait(Object.java:364)
+  at java.lang.Daemons$ReferenceQueueDaemon.run(Daemons.java:130)
+  at java.lang.Thread.run(Thread.java:841)
+
+"Compiler" daemon prio=5 tid=5 VMWAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa505c868 self=0xb967ade0
+  | sysTid=821 nice=0 sched=0/0 cgrp=apps handle=-1184522104
+  | state=S schedstat=( 1039030843 228237904 1187 ) utm=54 stm=49 core=0
+  #00  pc 0003e397  /system/lib/libc.so (__futex_syscall4+23)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"JDWP" daemon prio=5 tid=4 VMWAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa505c788 self=0xb9659a10
+  | sysTid=819 nice=0 sched=0/0 cgrp=apps handle=-1184524344
+  | state=S schedstat=( 7901201 4203620 12 ) utm=0 stm=0 core=1
+  #00  pc 0003c770  /system/lib/libc.so (select+32)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Signal Catcher" daemon prio=5 tid=3 RUNNABLE
+  | group="system" sCount=0 dsCount=0 obj=0xa505c690 self=0xb9659150
+  | sysTid=818 nice=0 sched=0/0 cgrp=apps handle=-1184526584
+  | state=R schedstat=( 18587559 6149206 57 ) utm=0 stm=1 core=2
+  at dalvik.system.NativeStart.run(Native Method)
+
+"GC" daemon prio=5 tid=2 VMWAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa505c5b0 self=0xb9658a98
+  | sysTid=817 nice=0 sched=0/0 cgrp=apps handle=-1184618040
+  | state=S schedstat=( 1181814020 1155832819 66942 ) utm=4 stm=113 core=3
+  #00  pc 0003e397  /system/lib/libc.so (__futex_syscall4+23)
+  at dalvik.system.NativeStart.run(Native Method)
+
+----- end 813 -----
+
+
+----- pid 692 at 2017-07-18 16:39:28 -----
+Cmd line: com.android.systemui
+
+JNI: CheckJNI is off; workarounds are off; pins=0; globals=346
+
+DALVIK THREADS:
+(mutexes: tll=0 tsl=0 tscl=0 ghl=0)
+
+"main" prio=5 tid=1 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa4d38bd8 self=0xb963deb0
+  | sysTid=692 nice=0 sched=0/0 cgrp=apps handle=-1216696256
+  | state=S schedstat=( 32196373710 2329827928 67998 ) utm=2070 stm=1149 core=1
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 00049fdf  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.app.ActivityThread.main(ActivityThread.java:5001)
+  at java.lang.reflect.Method.invokeNative(Native Method)
+  at java.lang.reflect.Method.invoke(Method.java:515)
+  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)
+  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)
+  at dalvik.system.NativeStart.main(Native Method)
+
+"Binder_4" prio=5 tid=21 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa54a5458 self=0xb98c3648
+  | sysTid=16907 nice=0 sched=0/0 cgrp=apps handle=-1181993984
+  | state=S schedstat=( 73915355 19302588 305 ) utm=0 stm=6 core=3
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"AsyncTask #5" prio=5 tid=20 WAIT
+  | group="main" sCount=1 dsCount=0 obj=0xa509caf0 self=0xb9805bf8
+  | sysTid=1070 nice=10 sched=0/0 cgrp=apps handle=-1182934192
+  | state=S schedstat=( 21529562 37943101 24 ) utm=0 stm=2 core=2
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa509cc38> (a java.lang.VMThread) held by tid=20 (AsyncTask #5)
+  at java.lang.Thread.parkFor(Thread.java:1205)
+  at sun.misc.Unsafe.park(Unsafe.java:325)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2017)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+  at java.lang.Thread.run(Thread.java:841)
+
+"AsyncTask #4" prio=5 tid=19 WAIT
+  | group="main" sCount=1 dsCount=0 obj=0xa54f0730 self=0xb9805788
+  | sysTid=977 nice=10 sched=0/0 cgrp=apps handle=-1182718792
+  | state=S schedstat=( 16468052 19800685 5 ) utm=0 stm=1 core=1
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa54f0848> (a java.lang.VMThread) held by tid=19 (AsyncTask #4)
+  at java.lang.Thread.parkFor(Thread.java:1205)
+  at sun.misc.Unsafe.park(Unsafe.java:325)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2017)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+  at java.lang.Thread.run(Thread.java:841)
+
+"AsyncTask #3" prio=5 tid=18 WAIT
+  | group="main" sCount=1 dsCount=0 obj=0xa54e8dd8 self=0xb98078f8
+  | sysTid=963 nice=10 sched=0/0 cgrp=apps handle=-1182761624
+  | state=S schedstat=( 1150091 1008641 10 ) utm=0 stm=0 core=3
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa54e8ef0> (a java.lang.VMThread) held by tid=18 (AsyncTask #3)
+  at java.lang.Thread.parkFor(Thread.java:1205)
+  at sun.misc.Unsafe.park(Unsafe.java:325)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2017)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+  at java.lang.Thread.run(Thread.java:841)
+
+"AsyncTask #2" prio=5 tid=17 WAIT
+  | group="main" sCount=1 dsCount=0 obj=0xa54e8ba8 self=0xb9807038
+  | sysTid=962 nice=10 sched=0/0 cgrp=apps handle=-1182763864
+  | state=S schedstat=( 527689 1475851 4 ) utm=0 stm=0 core=0
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa54e8cc0> (a java.lang.VMThread) held by tid=17 (AsyncTask #2)
+  at java.lang.Thread.parkFor(Thread.java:1205)
+  at sun.misc.Unsafe.park(Unsafe.java:325)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2017)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+  at java.lang.Thread.run(Thread.java:841)
+
+"Binder_3" prio=5 tid=16 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa54a1b90 self=0xb97dba88
+  | sysTid=858 nice=0 sched=0/0 cgrp=apps handle=-1183010304
+  | state=S schedstat=( 3531174194 458602310 14173 ) utm=60 stm=292 core=3
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"AsyncTask #1" prio=5 tid=15 WAIT
+  | group="main" sCount=1 dsCount=0 obj=0xa50790b0 self=0xb97cd268
+  | sysTid=768 nice=10 sched=0/0 cgrp=apps handle=-1183007712
+  | state=S schedstat=( 9667489 20253448 35 ) utm=0 stm=0 core=0
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa544af38> (a java.lang.VMThread) held by tid=15 (AsyncTask #1)
+  at java.lang.Thread.parkFor(Thread.java:1205)
+  at sun.misc.Unsafe.park(Unsafe.java:325)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2017)
+  at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+  at java.lang.Thread.run(Thread.java:841)
+
+"WifiManager" prio=5 tid=14 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50983d0 self=0xb97c8a00
+  | sysTid=761 nice=0 sched=0/0 cgrp=apps handle=-1183019408
+  | state=S schedstat=( 30406156 26121772 302 ) utm=0 stm=2 core=3
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 000343cf  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"SystemUI StorageNotification" prio=5 tid=13 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50acbf8 self=0xb97b67a8
+  | sysTid=739 nice=0 sched=0/0 cgrp=apps handle=-1183093736
+  | state=S schedstat=( 673672 12019559 14 ) utm=0 stm=0 core=2
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc 0000da9f  [heap]
+  #02  pc 0001e0ff  /system/lib/libutils.so
+  at android.os.MessageQueue.nativePollOnce(Native Method)
+  at android.os.MessageQueue.next(MessageQueue.java:138)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.os.HandlerThread.run(HandlerThread.java:61)
+
+"SoundPool" prio=5 tid=12 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50a5290 self=0xb979af20
+  | sysTid=713 nice=0 sched=0/0 cgrp=apps handle=-1183210472
+  | state=S schedstat=( 147053 1758762 2 ) utm=0 stm=0 core=1
+  #00  pc 0003e397  /system/lib/libc.so (__futex_syscall4+23)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"SoundPoolThread" prio=5 tid=11 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa50a5198 self=0xb979a8a8
+  | sysTid=714 nice=0 sched=0/0 cgrp=apps handle=-1183209888
+  | state=S schedstat=( 624235 418377 10 ) utm=0 stm=0 core=1
+  #00  pc 0003e397  /system/lib/libc.so (__futex_syscall4+23)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Binder_2" prio=5 tid=10 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa505da68 self=0xb967fdb8
+  | sysTid=704 nice=0 sched=0/0 cgrp=apps handle=-1184367760
+  | state=S schedstat=( 3616291014 568992537 14236 ) utm=64 stm=297 core=0
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Binder_1" prio=5 tid=9 NATIVE
+  | group="main" sCount=1 dsCount=0 obj=0xa505d980 self=0xb967f128
+  | sysTid=703 nice=0 sched=0/0 cgrp=apps handle=-1184372384
+  | state=S schedstat=( 3517521730 490928654 14228 ) utm=64 stm=286 core=1
+  #00  pc 0003c584  /system/lib/libc.so (__ioctl+20)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=8 WAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa5059070 self=0xb967e2e8
+  | sysTid=702 nice=0 sched=0/0 cgrp=apps handle=-1184381480
+  | state=S schedstat=( 14861098 3772962 80 ) utm=0 stm=1 core=3
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa4d420d8> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  at java.lang.Object.wait(Object.java:364)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.waitForObject(Daemons.java:230)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.run(Daemons.java:207)
+  at java.lang.Thread.run(Thread.java:841)
+
+"FinalizerDaemon" daemon prio=5 tid=7 WAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa5058ed0 self=0xb967bd18
+  | sysTid=701 nice=0 sched=0/0 cgrp=apps handle=-1184382584
+  | state=S schedstat=( 41469731 33579039 70 ) utm=1 stm=2 core=1
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa4d2d718> (a java.lang.ref.ReferenceQueue)
+  at java.lang.Object.wait(Object.java:401)
+  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:102)
+  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:73)
+  at java.lang.Daemons$FinalizerDaemon.run(Daemons.java:170)
+  at java.lang.Thread.run(Thread.java:841)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=6 WAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa5058d78 self=0xb967b458
+  | sysTid=700 nice=0 sched=0/0 cgrp=apps handle=-1184384824
+  | state=S schedstat=( 10715320 5061122 48 ) utm=0 stm=0 core=0
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0xa4d2d640> 
+  at java.lang.Object.wait(Object.java:364)
+  at java.lang.Daemons$ReferenceQueueDaemon.run(Daemons.java:130)
+  at java.lang.Thread.run(Thread.java:841)
+
+"Compiler" daemon prio=5 tid=5 VMWAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa5058c90 self=0xb967ade0
+  | sysTid=699 nice=0 sched=0/0 cgrp=apps handle=-1184522104
+  | state=S schedstat=( 558574580 93892958 568 ) utm=25 stm=30 core=0
+  #00  pc 0003e397  /system/lib/libc.so (__futex_syscall4+23)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"JDWP" daemon prio=5 tid=4 VMWAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa5058bb0 self=0xb9659a10
+  | sysTid=696 nice=0 sched=0/0 cgrp=apps handle=-1184524344
+  | state=S schedstat=( 7625946 3243978 10 ) utm=0 stm=0 core=1
+  #00  pc 0003c770  /system/lib/libc.so (select+32)
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Signal Catcher" daemon prio=5 tid=3 RUNNABLE
+  | group="system" sCount=0 dsCount=0 obj=0xa5058ab8 self=0xb9659150
+  | sysTid=695 nice=0 sched=0/0 cgrp=apps handle=-1184526584
+  | state=R schedstat=( 17578927 343816 28 ) utm=0 stm=0 core=3
+  at dalvik.system.NativeStart.run(Native Method)
+
+"GC" daemon prio=5 tid=2 VMWAIT
+  | group="system" sCount=1 dsCount=0 obj=0xa50589d8 self=0xb9658a98
+  | sysTid=694 nice=0 sched=0/0 cgrp=apps handle=-1184618040
+  | state=S schedstat=( 419032617 96265126 17591 ) utm=1 stm=40 core=3
+  #00  pc 0003e397  /system/lib/libc.so (__futex_syscall4+23)
+  at dalvik.system.NativeStart.run(Native Method)
+
+----- end 692 -----
+
+
+----- pid 84 at 2017-07-18 16:39:28 -----
+Cmd line: /system/bin/sdcard
+
+"sdcard" sysTid=84
+  #00  pc 0003c146  /system/lib/libc.so (read+22)
+
+"sdcard" sysTid=89
+  #00  pc 0003c146  /system/lib/libc.so (read+22)
+  #01  pc cad0957c  <unknown>
+
+"sdcard" sysTid=90
+  #00  pc 0003c146  /system/lib/libc.so (read+22)
+  #01  pc cad0957c  <unknown>
+
+----- end 84 -----
+
+
+----- pid 306 at 2017-07-18 16:39:28 -----
+Cmd line: /system/bin/surfaceflinger
+
+"surfaceflinger" sysTid=306
+  #00  pc 0003e07b  /system/lib/libc.so (epoll_wait+27)
+  #01  pc fffffffe  <unknown>
+  #02  pc 00005dd7  [heap]
+  #03  pc 0001e0ff  /system/lib/libutils.so
+  #04  pc 00012e8f  /system/lib/libutils.so
+  #05  pc 00012e9f  /system/lib/libutils.so
+  #06  pc 00012eaf  /system/lib/libutils.so
+  #07  pc 00012ebf  /system/lib/libutils.so
+  #08  pc ffffffff  <unknown>
+
+"Binder_1" sysTid=310
+  #00  pc 0003c586  /system/lib/libc.so (__ioctl+22)
+  #01  pc 00005f8f  [heap]
+
+"DispSync" sysTid=311
+  #00  pc 0003e399  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 00005acb  [heap]
+
+"Binder_2" sysTid=312
+  #00  pc 0003c586  /system/lib/libc.so (__ioctl+22)
+  #01  pc 00006507  [heap]
+
+"VSyncThread" sysTid=333
+  #00  pc 0003e399  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 00006cd7  [heap]
+
+"EventThread" sysTid=366
+  #00  pc 0003e399  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0000c21b  [heap]
+
+"EventThread" sysTid=367
+  #00  pc 0003e399  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0000c58b  [heap]
+
+"EventControl" sysTid=369
+  #00  pc 0003e399  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0000c9eb  [heap]
+
+"Binder_3" sysTid=658
+  #00  pc 0003c586  /system/lib/libc.so (__ioctl+22)
+  #01  pc 0000ff87  [heap]
+
+"Binder_4" sysTid=973
+  #00  pc 0003c586  /system/lib/libc.so (__ioctl+22)
+  #01  pc 000194ff  [heap]
+
+"Binder_5" sysTid=1606
+  #00  pc 0003c586  /system/lib/libc.so (__ioctl+22)
+  #01  pc 0001e01f  [heap]
+
+----- end 306 -----
+
+
+----- pid 308 at 2017-07-18 16:39:29 -----
+Cmd line: /system/bin/mediaserver
+
+"mediaserver" sysTid=308
+  #00  pc 0003c586  /system/lib/libc.so (__ioctl+22)
+  #01  pc 000063df  [heap]
+
+"ApmTone" sysTid=324
+  #00  pc 0003e399  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 00008deb  [heap]
+
+"ApmAudio" sysTid=325
+  #00  pc 0003e399  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 000090fb  [heap]
+
+"ApmOutput" sysTid=326
+  #00  pc 0003e399  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0000941b  [heap]
+
+"mediaserver" sysTid=327
+  #00  pc 0003d933  /system/lib/libc.so (accept+19)
+  #01  pc 49450c56  <unknown>
+  #02  pc 0000f097  [heap]
+  #03  pc 0000cbe7  [heap]
+  #04  pc 000094af  [heap]
+  #05  pc 0000918f  [heap]
+
+"FastMixer" sysTid=328
+  #00  pc 0003e399  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0000edff  [heap]
+  #02  pc ffffffff  <unknown>
+  #03  pc 0000efd7  [heap]
+  #04  pc 0000674f  /system/lib/libnbaio.so
+  #05  pc 000065cf  /system/lib/libnbaio.so
+  #06  pc 000064df  /system/lib/libnbaio.so
+  #07  pc 0000650f  /system/lib/libnbaio.so
+  #08  pc 0000653f  /system/lib/libnbaio.so
+  #09  pc 0000654f  /system/lib/libnbaio.so
+  #10  pc ffffffff  <unknown>
+
+"AudioOut_2" sysTid=659
+  #00  pc 0003e399  /system/lib/libc.so (__futex_syscall4+25)
+  #01  pc 0000002b  [anon:libc_malloc]
+
+"Binder_1" sysTid=660
+  #00  pc 0003c586  /system/lib/libc.so (__ioctl+22)
+  #01  pc 00019c67  [heap]
+
+"Binder_2" sysTid=865
+  #00  pc 0003c586  /system/lib/libc.so (__ioctl+22)
+  #01  pc 0001a1b7  [heap]
+
+"Binder_3" sysTid=16223
+  #00  pc 0003c586  /system/lib/libc.so (__ioctl+22)
+  #01  pc 00031e97  [heap]
+
+----- end 308 -----

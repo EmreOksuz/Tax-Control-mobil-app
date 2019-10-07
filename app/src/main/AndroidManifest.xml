@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tax.megakent.org.vergicontrol">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity android:name=".Main.Activity.BaseActivitys.LoginActivity" />
+        <activity android:name=".Main.Activity.BaseActivitys.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main.Activity.BaseActivitys.RegisterActivity" />
+        <activity android:name=".Main.Activity.BaseActivitys.HomeActivity" />
+        <activity android:name=".Main.Activity.BaseActivitys.BorcActivity" />
+        <activity android:name=".Main.Activity.BaseActivitys.TahsilatActivity" />
+        <activity android:name=".Main.Activity.BaseActivitys.SicilActivity" />
+        <activity android:name=".Main.Activity.BaseActivitys.AbonelikActivity" />
+        <activity
+            android:name=".Main.Activity.PopActivitys.PopDetayBorcActivity"
+            android:parentActivityName=".Main.Activity.BaseActivitys.BorcActivity"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".Main.Activity.PopActivitys.PopDetayTahsilatActivity"
+            android:parentActivityName=".Main.Activity.BaseActivitys.TahsilatActivity"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name=".Main.Activity.BaseActivitys.BeyanEmlDetayActivity" />
+        <activity
+            android:name=".Main.Activity.TabActivitys.TabGeneratorActivity"></activity>
+        <activity android:name=".Main.Activity.BaseActivitys.TahakkukActivity"/>
+    </application>
+
+</manifest>
